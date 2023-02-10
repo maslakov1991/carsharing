@@ -84,6 +84,7 @@ body {
     max-width: 470px;
 }
 .button {
+    display: inline-block;
     padding: 15px 18px;
     text-transform: uppercase;
     background: #c5ac2d;
@@ -123,10 +124,6 @@ body {
 .slick-active button {
     width: 16px;
     height: 16px;
-}
-.top__slider-item {
-}
-.slider__item-img {
 }
 .slider__item-text {
     font-family: "Fira Sans", sans-serif;
@@ -171,4 +168,50 @@ body {
 .bot__link {
     margin-top: auto;
     border-bottom: 1px solid #1b1818;
+}
+.terms {
+    margin: 100px 0;
+}
+.terms__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.terms__content {
+    max-width: 300px;
+}
+.terms__content-title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+.terms__content-text + .terms__content-text {
+    margin-top: 20px;
+}
+.terms__button {
+    margin-top: 40px;
+}
+.terms__item {
+    border: 1px solid #1b1818;
+    width: 250px;
+    padding: 0 30px 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.terms__item-number {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 115px;
+    opacity: 0.1;
+}
+.terms__item-title{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
 }
