@@ -59,6 +59,12 @@ body {
 .menu__link:hover {
     border-bottom: 1px solid #fefefe;
 }
+.phone {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
 
 .info__top {
     display: flex;
@@ -89,7 +95,7 @@ body {
     text-transform: uppercase;
     background: #c5ac2d;
     color: #fefefe;
-    border: 1px solid #fefefe;
+    border: 1px solid #c5ac2d;
     transition: all 0.4s;
 }
 .button:hover {
@@ -170,7 +176,7 @@ body {
     border-bottom: 1px solid #1b1818;
 }
 .terms {
-    margin: 100px 0;
+    padding: 100px 0;
 }
 .terms__inner {
     display: flex;
@@ -193,14 +199,15 @@ body {
     margin-top: 40px;
 }
 .terms__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: 1px solid #1b1818;
     width: 250px;
+    min-height: 350px;
     padding: 0 30px 10px;
     text-align: center;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
 }
 .terms__item-number {
     font-family: "Fira Sans", sans-serif;
@@ -209,9 +216,220 @@ body {
     line-height: 115px;
     opacity: 0.1;
 }
-.terms__item-title{
+.terms__item-title {
     font-family: "Fira Sans", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
 }
+
+.benefits {
+    padding: 100px 0;
+}
+.benefits__title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 48px;
+}
+.benefits__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefits__list {
+    width: 300px;
+}
+.benefits__list-item + .benefits__list-item {
+    margin-top: 27px;
+}
+.benefits__list-item {
+    padding-right: 26px;
+    position: relative;
+    text-align: right;
+}
+.benefits__list-item::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #1b1818;
+    right: 0;
+    top: 2px;
+}
+.benefits__list-item:nth-child(1),
+.benefits__list-item:nth-child(7) {
+    margin-right: 10px;
+}
+.benefits__list-item:nth-child(2),
+.benefits__list-item:nth-child(6) {
+    margin-right: 60px;
+}
+.benefits__list-item:nth-child(3),
+.benefits__list-item:nth-child(5) {
+    margin-right: 110px;
+}
+.benefits__list-item:nth-child(4) {
+    margin-right: 158px;
+}
+.benefits__content {
+    text-align: right;
+    width: 300px;
+}
+.benefits__item-text + .benefits__item-text {
+    margin-top: 30px;
+    width: 267px;
+    margin-left: auto;
+}
+.video-popup {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 6px 34px 6px 64px;
+    color: #fefefe;
+    border: 1px solid #c5ac2d;
+    background: #c5ac2d;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s;
+}
+.video-popup::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/playback.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    left: 30px;
+    top: 10px;
+}
+.video-popup:hover {
+    scale: 1.2;
+}
+
+.reviews {
+    padding: 100px 0;
+    background-color: #332208;
+    color: #fefefe;
+}
+.reviews__title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 70px;
+    margin-left: 15px;
+}
+.reviews-slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    width: 125px;
+    margin: 0 auto;
+}
+.reviews-slider .slick-dots button {
+    background-color: #c5ac2d;
+    line-height: 12px;
+}
+.reviews-slider button {
+    margin: 0 5px;
+}
+.slick-initialized .reviews__item {
+    display: flex;
+}
+.reviews__item {
+    border: 1px solid #c5ac2d;
+    padding: 45px 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    min-height: 300px;
+    text-align: center;
+    margin: 0 15px;
+}
+.reviews__item-title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fefefe;
+}
+
+.feedback {
+    padding: 100px 0;
+}
+.feedback__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback__image {
+    width: 50%;
+}
+.feedback__form {
+    width: 416px;
+    margin: 0 auto;
+}
+.feedback__title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.feedback__text {
+    margin-bottom: 30px;
+}
+.feedback__input {
+    display: block;
+    padding: 15px 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    line-height: 29px;
+}
+.feedback__input::placeholder {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1b1818;
+}
+.feedback__button {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 36px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: #332208;
+    color: #fefefe;
+    padding-top: 75px;
+    padding-bottom: 24px;
+}
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.socials {
+    text-align: center;
+}
+.socials__link{
+    margin: 0 15px;
+}
+
+
+
