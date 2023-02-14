@@ -434,6 +434,66 @@ body {
     display: none;
 }
 
+@media (max-width: 1180px) {
+    .benefits__item-img {
+        display: none;
+    }
+    .benefits {
+        text-align: center;
+    }
+    .benefits__items {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1100px) {
+    .terms__inner {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .terms__content,
+    .terms__item {
+        margin-bottom: 15px;
+    }
+    .terms__content {
+        max-width: 250px;
+    }
+    .reviews__item {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info__top {
+        display: block;
+    }
+    .top__content,
+    .top__slider {
+        width: 100%;
+    }
+    .top__content {
+        padding-top: 25px;
+    }
+    .slider__item-img {
+        width: 100%;
+    }
+    .info__bot {
+        display: block;
+    }
+    .bot__squares,
+    .bot__links {
+        width: 100%;
+    }
+    .bot__squares {
+        margin-bottom: 25px;
+        justify-content: space-evenly;
+    }
+    .terms,
+    .reviews {
+        padding: 25px 0;
+    }
+}
+
 @media (max-width: 860px) {
     .menu {
         order: 1;
@@ -481,5 +541,97 @@ body {
         left: 0;
         top: 12px;
         background-color: #fefefe;
+    }
+    .reviews__item {
+        justify-content: flex-start;
+    }
+    .reviews__item-title {
+        margin-bottom: 15px;
+    }
+    .reviews__title {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    .footer {
+        display: block;
+        padding: 25px 0;
+    }
+    .footer__top {
+        display: block;
+        text-align: center;
+    }
+    .footer .button{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .terms {
+        text-align: center;
+    }
+    .benefits {
+        padding: 25px 0;
+    }
+    .benefits__items {
+        flex-wrap: wrap;
+    }
+    .benefits__content {
+        text-align: center;
+        padding-top: 25px;
+    }
+    .benefits__list-item + .benefits__list-item {
+        margin-top: 15px;
+    }
+    .reviews__item {
+        padding: 15px 15px;
+        min-height: 200px;
+    }
+    .feedback {
+        padding: 25px 0;
+        text-align: center;
+    }
+    .feedback__image {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .top__title {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .top__text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .bot__squares,
+    .bot__links {
+        flex-wrap: wrap;
+    }
+    .squares__item {
+        margin-bottom: 15px;
+    }
+    .slider__item-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .terms__content {
+        max-width: 100%;
+    }
+    .terms__item {
+        width: 100%;
+        min-height: auto;
+    }
+    .terms__item-title {
+        margin-bottom: 10px;
+    }
+    .benefits__list-item:nth-child(4) {
+        margin-right: 145px;
+    }
+    .benefits__title {
+        margin-bottom: 25px;
+    }
+    .reviews__item {
+        min-height: 150px;
     }
 }
